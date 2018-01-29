@@ -1,0 +1,17 @@
+<h1>Meeting : <?= $meeting->titre() ?></h1>
+
+
+Description : <?= $meeting->description() ?> </br>
+Debut : <?= $meeting->endDate() ?> </br>
+Fin : <?= $meeting->startDate() ?> </br>
+
+
+<h1> Users </h1>
+
+Nom :
+
+<?php foreach ($users as $user) : ?>
+    
+ <?= $user->name() ?> </br>
+    
+<?php endforeach ?>

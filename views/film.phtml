@@ -1,0 +1,9 @@
+
+<h1>Films</h1>
+
+<?php foreach ($films as $film) :?>
+
+<a href="film/<?= urlencode($film->name()) ?>"><?= $film->name() ?></a>
+
+<?php endforeach ?>
+

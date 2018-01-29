@@ -1,0 +1,18 @@
+<h>Meetings</h>
+
+User : <?= $data[0]->name() ?> </br>
+
+<?php foreach ($data[1] as $meeting) :  ?> </br> 
+      
+Communauté : <?= $meeting[1]->getName() ?> </br>
+
+Titre : <?= $meeting[0]->titre() ?> </br>
+
+Description : <?= $meeting[0]->description() ?> </br>
+
+Debut : <?= $meeting[0]->endDate() ?> </br> 
+
+Fin : <?= $meeting[0]->startDate() ?> </br>
+
+    
+<?php endforeach ?>

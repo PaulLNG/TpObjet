@@ -1,0 +1,14 @@
+<h1>Tous les Meeting : </h1>
+</br>
+
+<?php foreach ($meetings as $meeting) : ?>
+     
+        
+Titre : <?= $meeting->titre() ?> </br>
+Description : <?= $meeting->description() ?> </br>
+Debut : <?= $meeting->endDate() ?> </br>
+Fin : <?= $meeting->startDate() ?> </br>
+
+
+
+<?php endforeach ?>
